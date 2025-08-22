@@ -176,6 +176,7 @@ class _OtpTextFieldState extends State<OtpTextField> {
         controller?.clear();
       }
       _verificationCode = List<String?>.filled(widget.numberOfFields, null);
+       _focusNodes[0]?.requestFocus();
       setState(() {
         widget.clearText = false;
       });
